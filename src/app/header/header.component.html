@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success scrolling-navbar fixed-top">
+
+    <div class="container">
+       
+      <!-- Navbar brand -->
+  
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li> -->
+          <!-- Dropdown -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">主页</a>
+          </li>  -->
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="[ '/dashboard' ]">主页</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="[ '/heroes' ]">详情</a>
+          </li> 
+        </ul>
+        <!-- Links -->
+  
+  
+      </div>
+      <!-- Collapsible content -->
+  
+    </div>
+  
+  </nav>
+
+  <div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('../../../assets/images/gujian3.png');
+      height: 1000px;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Web结业报告</h1>
+            <a type="button" class="btn btn-outline-light btn-rounded" href="https://blog.csdn.net/weixin_46137266/article/details/118058435">点击查看</a>
+        </div>
+      </div>
+    </div>
+  </div>
