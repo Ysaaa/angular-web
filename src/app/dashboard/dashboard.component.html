@@ -1,0 +1,15 @@
+<h2>推荐游戏</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<app-hero-search></app-hero-search>

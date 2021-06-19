@@ -1,0 +1,27 @@
+<h2 class="text-center">部分国产游戏一览</h2>
+
+<div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="new-hero">游戏名称: 
+  <input id="new-hero" #heroName />
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="add-button" (click)="add(heroName.value); heroName.value=''">
+    添加游戏
+  </button>
+</label>
+</div>
+
+<ul>
+  <li *ngFor="let hero of heroes" class="list-group-item list-group-item-success">
+    <a>
+      {{hero.id}}
+      <a class="text-center">{{hero.name}}</a>
+    </a>
+    <a routerLink="/detail/{{hero.id}}" class="editStyle">编辑</a>
+    <button class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul>

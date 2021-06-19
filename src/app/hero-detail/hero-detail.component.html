@@ -1,0 +1,15 @@
+<div *ngIf="hero">
+  <h3 class="text-center">{{hero.name}} 资料卡</h3>
+  <br>
+  <br>
+  <div><span>&nbsp;&nbsp;&nbsp;&nbsp;编号: </span>{{hero.id}}</div>
+  <br><br>
+  <div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<label for="hero-name" class="name">游戏名称: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+  </div>
+  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+  <button (click)="goBack()" type="button" class="btn btn-primary btn-rounded">返回</button>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <button (click)="save()" type="button" class="btn btn-primary btn-rounded">修改</button>
+</div>
